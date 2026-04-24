@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: mes_allocs_raw
+    database: mes-allocs-analysis
+    schema: mes_allocs_raw
+    tables:
+      - name: events
+      - name: users

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_events
+    description: "Cleaned event stream from the Mes-Allocs app simulation flow."
+    columns:
+      - name: user_id
+        description: "Unique identifier for the user"
+        tests:
+          - not_null
+      - name: event_type
+        description: "The specific action taken (e.g., simulation_started)"
+      - name: is_conversion
+        description: "Boolean flag identifying if the event resulted in a benefit application"
+      - name: Is_conversion
+        description: "{{doc('conversion_logic')}}"
+          
